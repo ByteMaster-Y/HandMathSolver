@@ -1,5 +1,6 @@
 # HandMath Solver
 손글씨 수식 인식 반응형 웹 애플리케이션 개발 Repository
+![메인화면](https://github.com/user-attachments/assets/a10037cd-3193-47cb-93dc-0ef2e9f370c3)
 </br>
 <h3>시연영상</h3>
 [시연영상 링크](https://example.com)
@@ -7,7 +8,6 @@
 
 ## 소개
 사용자는 웹 인터페이스에 손글씨로 수식을 입력하면, 시스템이 이를 분석하고 해결책을 시각적으로 표시합니다. 손글씨로 작성된 수식을 웹 애플리케이션에서 인식하여, 수식을 텍스트로 변환하고 해결책을 자동으로 제공하는 서비스입니다.
-![메인화면](https://github.com/user-attachments/assets/a10037cd-3193-47cb-93dc-0ef2e9f370c3)
 
 ## 개발
 ![Python](https://img.shields.io/badge/python-%23333333.svg?style=for-the-badge&logo=python&logoColor=white)
