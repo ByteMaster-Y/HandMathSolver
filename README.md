@@ -50,7 +50,8 @@
 
 
 ## 플로우 차트
-![process](https://github.com/user-attachments/assets/5df3d0d4-26f9-4e97-a8bb-a16dfaa50cea)
+![Process](https://github.com/user-attachments/assets/a20c41da-b58d-45af-94cb-0747dedb0d85)
+
 
 ## 구현 이미지
 ![시연이미지1](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece) </br>
