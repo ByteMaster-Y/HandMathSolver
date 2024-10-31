@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Login / Sign Up Page</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+    <!-- Unicons CSS -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+    <!-- Google Fonts -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/real_login.css') }}" />
+    <style></style>
+</head>
+
+<body>
+    <a href="#" class="logo" target="_blank"></a>
+        <div class="section">
+            <div class="container">
+                <div class="row full-height justify-content-center">
+                    <div class="col-12 text-center align-self-center py-5">
+                        <div class="section pb-5 pt-5 pt-sm-2 text-center">
+                            <h6 class="mb-0 pb-3"><span>Log in </span><span>Sign up</span></h6>
+                            <input class="checkbox" type="checkbox" id="reg-log" name="reg-log" />
+                            <label for="reg-log"></label>
+                            <div class="card-3d-wrap mx-auto">
+                                <div class="card-3d-wrapper">
+                                    <div class="card-front">
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                <h4 class="mb-4 pb-3">로그인</h4>
+                                                <form action="/login" method="POST">
+                                                    <div class="form-group">
+                                                        <input type="email" name="email" class="form-style" placeholder="이메일을 입력하세요" id="logemail" autocomplete="off" required>
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" name="passwd" class="form-style" placeholder="비밀번호를 입력하세요" id="logpass" autocomplete="off" required>
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <button type="submit" class="btn mt-4">다음</button>
+                                                    <p class="mb-0 mt-4 text-center"><a href="#!" class="link">비밀번호를 잊어버리셨나요?</a></p>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-back">
+                                        <div class="center-wrap">
+                                            <div class="section text-center">
+                                                <h4 class="mb-4 pb-3">회원가입</h4>
+                                                <form action="/login" method="POST">
+                                                    <div class="form-group">
+                                                        <input type="email" id="signupEmail" name="email" class="form-style" placeholder="이메일을 입력하세요" required />
+                                                        <i class="input-icon uil uil-at"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" id="signupPassword" name="passwd" class="form-style" placeholder="비밀번호를 입력하세요" required />
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="password" id="signupConfirmPassword" name="passwd2" class="form-style" placeholder="비밀번호를 확인하세요" required />
+                                                        <i class="input-icon uil uil-lock-alt"></i>
+                                                    </div>
+                                                    <div class="form-group mt-2">
+                                                        <input type="text" id="signupNickname" name="nickname" class="form-style" placeholder="사용하실 닉네임을 입력하세요" required />
+                                                        <i class="input-icon uil uil-user"></i>
+                                                    </div>
+                                                    <button type="submit" class="btn mt-4">다음</button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                var flashMessages = {{ get_flashed_messages(with_categories=True)|tojson }};
+                
+                var loginMessages = flashMessages.filter(function(msg) {
+                    return msg[0] === "login";
+                }).map(function(msg) {
+                    return msg[1];
+                });
+                
+                var signupMessages = flashMessages.filter(function(msg) {
+                    return msg[0] === "signup";
+                }).map(function(msg) {
+                    return msg[1];
+                });
+
+                // 로그인 메시지 처리
+                if (loginMessages.length > 0) {
+                    // 기존의 알림이 있는지 확인하고 제거
+                    var existingAlert = document.querySelector('.card-front .alert');
+                    if (existingAlert) {
+                        existingAlert.remove();
+                    }
+                    
+                    // 새로운 알림을 생성하고 추가
+                    var alertDiv = document.createElement('div');
+                    alertDiv.className = 'alert alert-danger'; // 로그인 오류 스타일
+                    alertDiv.innerHTML = loginMessages.map(function(msg) {
+                        return '<p><strong>' + msg + '</strong></p>';
+                    }).join('');
+                    var section = document.querySelector('.card-front .section');
+                    section.insertBefore(alertDiv, section.querySelector('form')); // 폼 앞에 알림 추가
+                }
+
+                // 회원가입 메시지 처리
+                if (signupMessages.length > 0) {
+                    // 기존의 알림이 있는지 확인하고 제거
+                    var existingAlert = document.querySelector('.card-back .alert');
+                    if (existingAlert) {
+                        existingAlert.remove();
+                    }
+                    
+                    // 새로운 알림을 생성하고 추가
+                    var alertDiv = document.createElement('div');
+                    alertDiv.className = 'alert alert-danger'; // 회원가입 오류 스타일
+                    alertDiv.innerHTML = signupMessages.map(function(msg) {
+                        return '<p><strong>' + msg + '</strong></p>';
+                    }).join('');
+                    var section = document.querySelector('.card-back .section');
+                    section.insertBefore(alertDiv, section.querySelector('form')); // 폼 앞에 알림 추가
+                }
+
+                // 플래시 메시지에 따라 폼 상태 조정
+                if (signupMessages.length > 0) {
+                    document.getElementById('reg-log').checked = true; // 회원가입 폼 활성화
+                }
+            });
+        </script>
+    </body>
+</html>
