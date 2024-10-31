@@ -2,7 +2,7 @@
 손글씨 수식 인식 반응형 웹 애플리케이션 개발 Repository
 </br>
 <h3>시연영상</h3>
-[시연영상 링크](https://example.com)
+[시연영상 링크](https://example.com)<br>
 ![스크린샷 2024-10-31 103635](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece)
 
 </br>
