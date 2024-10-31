@@ -52,7 +52,7 @@
 ![process](https://github.com/user-attachments/assets/5df3d0d4-26f9-4e97-a8bb-a16dfaa50cea)
 
 ## 이미지
-![시연이미지1](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece)
+![시연이미지1](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece) <br>
 ![시연이미지2](https://github.com/user-attachments/assets/668ae194-775c-4f05-8878-7eeacf387ccb)
 
 ## 팀원
