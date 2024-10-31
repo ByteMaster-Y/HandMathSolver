@@ -56,6 +56,6 @@
 ![시연이미지2](https://github.com/user-attachments/assets/668ae194-775c-4f05-8878-7eeacf387ccb)
 
 ## 팀원
-
+https://github.com/KDH0908
 ## 라이선스
 이 프로젝트는 MIT 라이선스에 따라 라이선스가 부여됩니다. 자세한 내용은 [LICENSE](LICENSE) 파일을 참조하세요.
