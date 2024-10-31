@@ -46,7 +46,8 @@
 사진을 찍어 올리는 번거로움을 없애고, 비교적 간단한 방식으로 사용자에게 편리함을 제공합니다.
 
 ## operations.py의 Blueprint
-![블루프린트v1](https://github.com/user-attachments/assets/1d453b24-8dc8-42a1-942a-179eeec21d87)
+![Blueprint](https://github.com/user-attachments/assets/d9923cd1-9931-4017-8e41-a2d80cf137e6)
+
 
 
 ## 플로우 차트
