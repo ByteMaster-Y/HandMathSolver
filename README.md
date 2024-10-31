@@ -2,9 +2,7 @@
 손글씨 수식 인식 반응형 웹 애플리케이션 개발 Repository
 </br>
 <h3>시연영상</h3>
-[시연영상 링크](https://example.com)<br>
-![시연이미지](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece)
-
+[시연영상 링크](https://example.com)
 </br>
 
 ## 소개
@@ -53,9 +51,8 @@
 ## 플로우 차트
 ![process](https://github.com/user-attachments/assets/5df3d0d4-26f9-4e97-a8bb-a16dfaa50cea)
 
-## 포스터
-![Poster]
-
+## 이미지
+![시연이미지](https://github.com/user-attachments/assets/27860a21-9643-46ae-b413-45d71d37aece)
 ## 팀원
 
 ## 라이선스
