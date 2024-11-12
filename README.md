@@ -62,8 +62,8 @@
 ![시연이미지2](https://github.com/user-attachments/assets/668ae194-775c-4f05-8878-7eeacf387ccb)
 
 
-## 참고문헌
-
+## WBS (업무분담일지)
+https://docs.google.com/spreadsheets/d/1ZzKFC62aShEalOT7NB6iXFMRA3iyNeMoHn3BGQoCjoI/edit?usp=sharing
 
 ## 팀원
 팀원-https://github.com/KDH0908 </br>
