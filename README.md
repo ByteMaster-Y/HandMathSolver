@@ -1,5 +1,5 @@
 # HandMath Solver
-### 손글씨 수식 인식 반응형 웹 애플리케이션 개발 Repository </br>
+### 딥러닝 손글씨 수식 인식 반응형 웹 애플리케이션 개발 Repository </br>
 ![메인화면](https://github.com/user-attachments/assets/a10037cd-3193-47cb-93dc-0ef2e9f370c3)
 </br>
 <h3>시연영상</h3>
